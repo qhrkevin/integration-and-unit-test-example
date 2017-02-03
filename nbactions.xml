@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-Unit Tests + Integration Tests</actionName>
+            <displayName>Unit Tests + Integration Tests</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>verify</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-Integration Tests</actionName>
+            <displayName>Integration Tests</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>verify</goal>
+                <goal>-Dsurefire.skip=true</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-Unit Tests</actionName>
+            <displayName>Unit Tests</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>verify</goal>
+                <goal>-DskipITs=true</goal>
+            </goals>
+        </action>
+</actions>
