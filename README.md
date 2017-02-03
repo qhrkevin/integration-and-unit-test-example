@@ -1,7 +1,8 @@
 # Example Unit & Integration Test Project
 
 A simple example project for running Unit Test and Integration Tests together or independently 
-This example uses the maven-surefire plugin, and the maven-failsafe plugin
+
+This example uses the [maven-surefire plugin](http://maven.apache.org/components/surefire/maven-surefire-plugin/), and the [maven-failsafe plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
 
 Tests will not run when the following actions are take in the IDE:
 
