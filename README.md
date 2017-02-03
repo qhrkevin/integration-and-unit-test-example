@@ -11,14 +11,13 @@ Tests will not run when the following actions are take in the IDE:
 * Debug
 * Build with Dependencies
 
-### To Run Both Unit Tests & Integration Tests
+## How to run tests
 
-`mvn clean verify`                          Or run Custom Goal: Unit Tests + Integration Tests in Netbeans 
+To run a custom goal in Netbeans, right click the project and select Custom, followed by the desired goal
 
-### To Run only Integration Tests
+| Command Line | Custom Goal | Integration Tests | Unit Tests |
+| --- | --- | :---: | :---: | 
+| `mvn clean verify` | Unit Tests + Integration Tests | :heavy_check_mark: | :heavy_check_mark: |
+| `mvn clean verify -Dsurefire.skip=true` | Integration Tests | :heavy_check_mark: | :x: |
+| `mvn clean verify -DskipITs=true` | Unit Tests | :x: | :heavy_check_mark: |
 
-`mvn clean verify -Dsurefire.skip=true`     Or run Custom Goal: Integration Tests in Netbeans
-
-### To Run only Unit Tests
-
-`mvn clean verify -DskipITs=true`           Or run Custom Goal: Unit Tests
