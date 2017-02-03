@@ -9,7 +9,7 @@ This example uses the maven-surefire plugin, and the maven-failsafe plugin
 
 ### To Run only Integration Tests
 
-`mvn clean verify` Or Select the Custom Goal: Integration Tests in Netbeans
+`mvn clean verify -Dsurefire.skip=true` Or Select the Custom Goal: Integration Tests in Netbeans
 
 ### To Run only Unit Tests
 
