@@ -6,6 +6,8 @@
             <goals>
                 <goal>clean</goal>
                 <goal>verify</goal>
+                <goal>-Dsurefire.skip=false</goal>
+                <goal>-Dfailsafe.skip=false</goal>
             </goals>
         </action>
         <action>
@@ -15,6 +17,7 @@
                 <goal>clean</goal>
                 <goal>verify</goal>
                 <goal>-Dsurefire.skip=true</goal>
+                <goal>-Dfailsafe.skip=false</goal>
             </goals>
         </action>
         <action>
@@ -23,7 +26,8 @@
             <goals>
                 <goal>clean</goal>
                 <goal>verify</goal>
-                <goal>-DskipITs=true</goal>
+                <goal>-Dsurefire.skip=false</goal>
+                <goal>-Dfailsafe.skip=true</goal>
             </goals>
         </action>
         <action>
