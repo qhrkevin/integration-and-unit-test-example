@@ -9,6 +9,7 @@ Tests will not run when the following actions are take in the IDE:
 * Clean & Build
 * Run
 * Debug
+* Build with Dependencies
 
 ### To Run Both Unit Tests & Integration Tests
 
